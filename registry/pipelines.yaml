@@ -1,19 +1,28 @@
+version: 1
+
 pipelines:
   - id: aaa-character
     name: AAA Character Production
+    category: character
+    software:
+      - blender
     stages:
       - concept
       - blockout
-      - highpoly
+      - highpoly_sculpt
       - retopology
-      - uv
-      - baking
-      - texturing
-      - rigging-prep
-      - final-qc
+      - uv_unwrapping
+      - texture_baking
+      - pbr_texturing
+      - rigging_prep
+      - final_qc
+    evaluation: enabled
 
   - id: product-visualization
     name: Product Visualization Pipeline
+    category: rendering
+    software:
+      - blender
     stages:
       - reference
       - modeling
@@ -22,3 +31,4 @@ pipelines:
       - camera
       - render
       - review
+    evaluation: enabled
