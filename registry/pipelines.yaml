@@ -1,0 +1,24 @@
+pipelines:
+  - id: aaa-character
+    name: AAA Character Production
+    stages:
+      - concept
+      - blockout
+      - highpoly
+      - retopology
+      - uv
+      - baking
+      - texturing
+      - rigging-prep
+      - final-qc
+
+  - id: product-visualization
+    name: Product Visualization Pipeline
+    stages:
+      - reference
+      - modeling
+      - materials
+      - lighting
+      - camera
+      - render
+      - review
