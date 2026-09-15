@@ -1,59 +1,84 @@
 # 3D Agent Skills
 
-Professional production skills for AI agents working with Blender, CG, 3D modeling, sculpting, texturing, rendering and digital content creation workflows.
+Production framework for AI agents that work like professional CG artists, technical directors and art supervisors.
 
-## Vision
+## Overview
 
-`3d-agent-skills` is a production knowledge base for autonomous AI agents that work with 3D software.
+`3d-agent-skills` is not a prompt collection. It is a production knowledge system that teaches autonomous AI agents how to think and operate through real 3D workflows.
 
-The goal is to give AI agents the mindset and workflow of professional CG artists, technical directors and art supervisors instead of simple software instructions.
+The framework covers:
 
-## Production Domains
-
-- Blender workflows
+- Blender
 - Character creation
 - Environment art
-- Hard surface modeling
+- Modeling
 - Sculpting
-- Retopology
-- UV workflows
-- Materials and look development
-- Lighting and cinematography
-- Rendering optimization
+- Texturing
+- Look development
+- Lighting
+- Rendering
 - Quality control
+
+## Architecture
+
+```text
+3D Agent
+   |
+   v
+CG Supervisor
+   |
+   +-- Character Artist
+   +-- Environment Artist
+   +-- Modeler
+   +-- Sculptor
+   +-- LookDev Artist
+   +-- Lighting Artist
+   +-- Render TD
+   +-- QC Supervisor
+   |
+   v
+Blender / ZBrush / Houdini / Unreal
+```
 
 ## Repository Structure
 
 ```text
 3d-agent-skills/
-├── skills/
-│   └── blender/
+├── core/
 ├── agents/
-├── templates/
-└── docs/
+├── disciplines/
+├── software/
+├── pipelines/
+├── standards/
+└── templates/
 ```
 
-## Philosophy
+## Design Principles
 
-A professional AI 3D agent should understand:
+AI agents should understand:
 
 - artistic intent
-- production pipelines
-- visual quality standards
-- technical constraints
-- iteration workflows
+- professional pipelines
+- production constraints
+- visual evaluation
+- iteration loops
+
+## Supported Production Pipelines
+
+- AAA game characters
+- cinematic assets
+- product visualization
+- environments
+- procedural workflows
 
 ## Roadmap
 
-- [x] Blender production master skill
-- [ ] Character artist workflows
-- [ ] Environment artist workflows
-- [ ] CG supervisor agent
-- [ ] ZBrush skills
-- [ ] Substance Painter skills
-- [ ] Houdini skills
-- [ ] Unreal Engine workflows
+- [x] Blender production foundation
+- [x] CG supervisor architecture
+- [ ] Multi-software skills
+- [ ] Evaluation framework
+- [ ] MCP integrations
 
 ## Keywords
 
-AI agents, agent skills, Blender AI, 3D modeling, computer graphics, CG pipeline, generative AI, autonomous creative workflows
+AI agents, agent skills, Blender AI, 3D agent, CG pipeline, computer graphics, autonomous artist, generative 3D
