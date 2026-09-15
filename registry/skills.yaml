@@ -1,0 +1,19 @@
+version: 1
+
+skills:
+  - name: blender-production-master
+    category: pipeline
+    software: blender
+    level: expert
+    evaluation: enabled
+
+  - name: blender-character-artist
+    category: character
+    software: blender
+    level: senior
+    evaluation: enabled
+
+agents:
+  - cg-supervisor-agent
+  - character-artist-agent
+  - environment-artist-agent
