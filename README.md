@@ -4,81 +4,65 @@ Production framework for AI agents that work like professional CG artists, techn
 
 ## Overview
 
-`3d-agent-skills` is not a prompt collection. It is a production knowledge system that teaches autonomous AI agents how to think and operate through real 3D workflows.
+This repository is a production knowledge system for autonomous 3D agents. It encodes real studio workflows instead of simple software commands.
 
-The framework covers:
+## Architecture
 
-- Blender
+```
+AI Agent
+  |
+CG Supervisor
+  |
+Character Artist | Environment Artist | LookDev | Render TD | QC
+  |
+Blender / ZBrush / Houdini / Unreal
+```
+
+## Included Systems
+
+- Agent roles
+- Production pipelines
+- Quality standards
+- Asset management rules
+- CG workflows
+
+## Production Domains
+
 - Character creation
 - Environment art
-- Modeling
+- Hard surface modeling
 - Sculpting
 - Texturing
 - Look development
 - Lighting
 - Rendering
-- Quality control
-
-## Architecture
-
-```text
-3D Agent
-   |
-   v
-CG Supervisor
-   |
-   +-- Character Artist
-   +-- Environment Artist
-   +-- Modeler
-   +-- Sculptor
-   +-- LookDev Artist
-   +-- Lighting Artist
-   +-- Render TD
-   +-- QC Supervisor
-   |
-   v
-Blender / ZBrush / Houdini / Unreal
-```
+- Optimization
 
 ## Repository Structure
 
-```text
-3d-agent-skills/
-├── core/
-├── agents/
-├── disciplines/
-├── software/
-├── pipelines/
-├── standards/
-└── templates/
 ```
-
-## Design Principles
-
-AI agents should understand:
-
-- artistic intent
-- professional pipelines
-- production constraints
-- visual evaluation
-- iteration loops
-
-## Supported Production Pipelines
-
-- AAA game characters
-- cinematic assets
-- product visualization
-- environments
-- procedural workflows
+core/
+agents/
+software/
+disciplines/
+pipelines/
+standards/
+templates/
+```
 
 ## Roadmap
 
-- [x] Blender production foundation
 - [x] CG supervisor architecture
-- [ ] Multi-software skills
-- [ ] Evaluation framework
-- [ ] MCP integrations
+- [x] Character workflow foundation
+- [x] Environment workflow foundation
+- [x] LookDev workflow foundation
+- [x] Render supervision
+- [x] Production standards
+- [ ] Blender MCP integration
+- [ ] ZBrush workflows
+- [ ] Houdini workflows
+- [ ] Unreal Engine workflows
 
-## Keywords
+## Vision
 
-AI agents, agent skills, Blender AI, 3D agent, CG pipeline, computer graphics, autonomous artist, generative 3D
+Create the first open production framework where AI agents can operate as complete digital content creation teams.
