@@ -1,0 +1,27 @@
+version: 1
+name: 3d-agent-skills
+
+harnesses:
+  claude-code:
+    skill_format: SKILL.md
+    recommended_path: .claude/skills
+
+  codex:
+    skill_format: SKILL.md
+    recommended_path: .codex/skills
+
+  opencode:
+    skill_format: SKILL.md
+    recommended_path: .opencode/skills
+
+  cursor:
+    skill_format: markdown
+    recommended_path: .cursor/skills
+
+  cline:
+    skill_format: markdown
+    recommended_path: .cline/skills
+
+  roo-code:
+    skill_format: markdown
+    recommended_path: .roo/skills
