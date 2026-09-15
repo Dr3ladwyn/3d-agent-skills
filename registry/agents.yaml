@@ -1,0 +1,40 @@
+agents:
+  - id: cg-supervisor
+    role: CG Production Supervisor
+    level: senior
+    responsibilities:
+      - task planning
+      - agent orchestration
+      - quality approval
+
+  - id: character-artist
+    role: Character Artist
+    level: senior
+    domains:
+      - anatomy
+      - sculpting
+      - topology
+
+  - id: environment-artist
+    role: Environment Artist
+    level: senior
+    domains:
+      - world building
+      - modular assets
+      - composition
+
+  - id: technical-director
+    role: Technical Artist
+    level: senior
+    domains:
+      - automation
+      - pipelines
+      - optimization
+
+  - id: quality-reviewer
+    role: CG Quality Supervisor
+    level: senior
+    domains:
+      - evaluation
+      - validation
+      - production gates
