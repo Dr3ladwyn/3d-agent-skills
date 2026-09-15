@@ -1,0 +1,33 @@
+# 3D Agent Skills Specification
+
+version: 1
+
+skill:
+  name: string
+  description: string
+  role: string
+  category: string
+  software:
+    - blender
+
+metadata:
+  level: junior|mid|senior|expert
+  dependencies: []
+  compatible_harness:
+    - claude-code
+    - codex
+    - opencode
+
+workflow:
+  phases:
+    - name: string
+      actions: []
+
+quality:
+  checks:
+    - string
+
+principles:
+  - production_ready
+  - reference_driven
+  - iterative_review
