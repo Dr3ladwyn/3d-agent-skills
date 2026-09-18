@@ -13,6 +13,18 @@ skills:
     level: senior
     evaluation: enabled
 
+  - name: blender-hard-surface
+    category: modeling
+    software: blender
+    level: senior
+    evaluation: enabled
+
+  - name: blender-quality-control
+    category: quality
+    software: blender
+    level: senior
+    evaluation: enabled
+
   - name: blender-modeling-expert
     category: modeling
     software: blender
@@ -81,6 +93,12 @@ skills:
 
   - name: blender-asset-manager
     category: pipeline
+    software: blender
+    level: senior
+    evaluation: enabled
+
+  - name: blender-technical-artist
+    category: technical-art
     software: blender
     level: senior
     evaluation: enabled

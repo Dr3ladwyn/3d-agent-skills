@@ -2,6 +2,8 @@ agents:
   - id: cg-supervisor
     role: CG Production Supervisor
     level: senior
+    skill: cg-supervisor-agent
+    software: blender
     responsibilities:
       - task planning
       - agent orchestration
@@ -10,6 +12,8 @@ agents:
   - id: character-artist
     role: Character Artist
     level: senior
+    skill: character-artist-agent
+    software: blender
     domains:
       - anatomy
       - sculpting
@@ -18,6 +22,8 @@ agents:
   - id: environment-artist
     role: Environment Artist
     level: senior
+    skill: environment-artist-agent
+    software: blender
     domains:
       - world building
       - modular assets
@@ -26,6 +32,8 @@ agents:
   - id: technical-director
     role: Technical Artist
     level: senior
+    skill: technical-director-agent
+    software: blender
     domains:
       - automation
       - pipelines
@@ -34,6 +42,8 @@ agents:
   - id: quality-reviewer
     role: CG Quality Supervisor
     level: senior
+    skill: quality-reviewer-agent
+    software: blender
     domains:
       - evaluation
       - validation

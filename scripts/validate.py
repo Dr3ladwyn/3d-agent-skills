@@ -38,6 +38,11 @@ def main():
             if data.get("name") in names:
                 errors.append(f"duplicate skill name: {data.get('name')}")
             names.add(data.get("name"))
+            desc = str(data.get("description", ""))
+            if len(desc) < 40:
+                errors.append(f"{path}: description too short (<40 chars)")
+            if "Use when" not in desc:
+                errors.append(f"{path}: description must contain 'Use when'")
         except Exception as exc:
             errors.append(str(exc))
 
@@ -45,9 +50,31 @@ def main():
     if registry.exists():
         data = yaml.safe_load(registry.read_text()) or {}
         registered = {x.get("name") for x in data.get("skills", [])}
+        registered |= set(data.get("agents", []) or [])
         missing = names - registered
         if missing:
             errors.append("registry missing: " + ", ".join(sorted(missing)))
+        extra = registered - names
+        if extra:
+            errors.append("registry extra (no SKILL.md on disk): " + ", ".join(sorted(extra)))
+
+    # pipelines registry <-> pipelines/ folders
+    preg = ROOT / "registry" / "pipelines.yaml"
+    if preg.exists():
+        pdata = yaml.safe_load(preg.read_text()) or {}
+        for p in pdata.get("pipelines", []):
+            pid = p.get("id")
+            if pid and not (ROOT / "pipelines" / pid).is_dir():
+                errors.append(f"pipeline missing folder: pipelines/{pid}/")
+
+    # agents registry <-> agents/ folders
+    areg = ROOT / "registry" / "agents.yaml"
+    if areg.exists():
+        adata = yaml.safe_load(areg.read_text()) or {}
+        for a in adata.get("agents", []):
+            skill = a.get("skill")
+            if skill and not (ROOT / "agents" / skill / "SKILL.md").exists():
+                errors.append(f"agent skill missing: agents/{skill}/SKILL.md")
 
     if errors:
         print("VALIDATION FAILED")

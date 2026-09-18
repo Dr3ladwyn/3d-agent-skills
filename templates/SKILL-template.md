@@ -1,3 +1,12 @@
+---
+name: my-skill-name
+description: What this skill does and the trigger keywords. Use when doing X in Blender.
+role: Specialist Role
+category: modeling|sculpting|topology|uv|materials|lookdev|lighting|camera|rendering|technical-art|procedural|pipeline|character|quality|supervision|environment
+software: blender
+level: senior
+---
+
 # Skill Name
 
 ## Role

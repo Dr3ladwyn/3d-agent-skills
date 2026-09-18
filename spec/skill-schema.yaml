@@ -13,10 +13,16 @@ skill:
 metadata:
   level: junior|mid|senior|expert
   dependencies: []
+  # description is REQUIRED: harness loaders (Claude Code, OpenCode, Codex)
+  # filter out skills without a "Use when..." description.
+  # name MUST equal the SKILL.md parent folder name.
   compatible_harness:
     - claude-code
     - codex
     - opencode
+    - cursor
+    - cline
+    - roo-code
 
 workflow:
   phases:
