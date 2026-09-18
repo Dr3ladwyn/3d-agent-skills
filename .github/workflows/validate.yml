@@ -19,7 +19,7 @@ jobs:
           pip install pyyaml
       - name: Validate repository
         run: |
-          python scripts/validate.py || true
-      - name: Validate Python examples
+          python scripts/validate.py
+      - name: Validate Python files
         run: |
           python -m compileall integrations cli examples
